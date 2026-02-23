@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – TM Traceable Modernization GmbH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-tm">TM</span>
+      <span class="logo-text">Traceable Modernization</span>
+    </a>
+    <button class="burger" id="burger">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="use-cases.html">Use Cases</a></li>
+      <li><a href="referenzen.html">Referenzen</a></li>
+      <li><a href="kontakt.html" class="active nav-cta">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-grid"></div>
+    <p class="section-tag reveal">Sprechen wir</p>
+    <h1 class="reveal delay-1">Kontakt &amp; <em>Beratung</em></h1>
+    <p class="reveal delay-2">Kein Formular-Ping-Pong. Wir melden uns direkt bei Ihnen — persönlich und konkret.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="content-inner">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div>
+          <p class="section-tag">Nachricht senden</p>
+          <form id="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Max Mustermann" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Unternehmen</label>
+              <input type="text" id="company" name="company" placeholder="Musterbank AG" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" placeholder="max@musterbank.de" required />
+            </div>
+            <div class="form-group">
+              <label for="interest">Thema</label>
+              <select id="interest" name="interest">
+                <option value="">Worum geht es?</option>
+                <option>Prozessberatung &amp; Analyse</option>
+                <option>Automatisierungsprojekt</option>
+                <option>Dienstleistersteuerung</option>
+                <option>Excel / Makro-Ablösung</option>
+                <option>Plattformstrategie</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" placeholder="Beschreiben Sie kurz Ihre Situation oder Fragestellung..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Nachricht senden</button>
+            <p id="form-success" style="display:none;color:var(--gold);margin-top:1rem;font-size:0.9rem;">✓ Vielen Dank! Wir melden uns in Kürze.</p>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <p class="section-tag">Direkter Kontakt</p>
+          <h3>TM Traceable Modernization GmbH</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉</div>
+            <div class="contact-detail-text">
+              <strong>E-Mail</strong>
+              <p>info@tm-modernization.de<br/><span style="font-size:0.8rem;">(Platzhalter — bitte anpassen)</span></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text">
+              <strong>Standort</strong>
+              <p>Deutschland<br/><span style="font-size:0.8rem;">(Adresse ergänzen)</span></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div class="contact-detail-text">
+              <strong>Reaktionszeit</strong>
+              <p>In der Regel innerhalb von 24 Stunden an Werktagen.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem; padding:2rem; background:rgba(201,168,76,0.06); border:1px solid var(--border); border-radius:6px;">
+            <p style="font-family:var(--font-display);font-size:1.2rem;font-weight:600;margin-bottom:0.5rem;font-style:italic;">"Efficiency meets Traceability."</p>
+            <p style="color:var(--muted);font-size:0.88rem;line-height:1.7;">Wir automatisieren nicht blind — wir bauen Lösungen, die Ihre Teams verstehen und eigenständig weiterentwickeln können.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-tm">TM</span>
+          <span class="logo-text">Traceable Modernization</span>
+        </div>
+        <p>Efficiency meets Traceability.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="use-cases.html">Use Cases</a>
+        <a href="referenzen.html">Referenzen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 TM Traceable Modernization GmbH</span>
+      <span>Impressum · Datenschutz</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Use Cases – TM Traceable Modernization GmbH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-tm">TM</span>
+      <span class="logo-text">Traceable Modernization</span>
+    </a>
+    <button class="burger" id="burger">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="use-cases.html" class="active">Use Cases</a></li>
+      <li><a href="referenzen.html">Referenzen</a></li>
+      <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-grid"></div>
+    <p class="section-tag reveal">Anwendungsfälle</p>
+    <h1 class="reveal delay-1">Use <em>Cases</em></h1>
+    <p class="reveal delay-2">Konkrete Szenarien, in denen Prozessautomatisierung nachweislich Wirkung zeigt.</p>
+  </section>
+
+  <!-- USE CASE 1: Dienstleistersteuerung -->
+  <section class="content-section" id="dienstleister">
+    <div class="content-inner">
+      <p class="section-tag">Use Case 01</p>
+      <div class="uc-detail">
+        <div class="uc-detail-text">
+          <h3>Dienstleistersteuerung &amp; -analyse</h3>
+          <p>
+            Nicht alle Prozesse werden intern behandelt. Spezialisierte Dienstleister übernehmen wichtige Teilleistungen — bei einer Versicherung etwa ein Telefondienst für Werbezwecke, bei einem Online-Shop ein Logistikunternehmen für den Paketversand.
+          </p>
+          <p>
+            Das Problem: <strong>Wie steuert man einen Dienstleister mit eigenen Systemen und bewertet seine Leistung objektiv?</strong>
+          </p>
+          <p>
+            Unsere Lösung: Datengetriebene Analyse über KNIME. Große, heterogene Datenmengen werden aufbereitet. Mit statistischen Modellen lässt sich die Leistung objektiv bewerten — hält der Dienstleister, was er verspricht?
+          </p>
+          <p>
+            Tiefer gehend setzen wir prädiktive Modelle ein, um Voraussagen zu treffen. Sie wechseln von einer <strong>reaktiven in eine aktive Steuerungsposition</strong>.
+          </p>
+        </div>
+        <div>
+          <div class="uc-highlight-box" style="margin-bottom:1rem;">
+            <strong>Typische Datenquellen</strong>
+            Leistungsreporte des Dienstleisters, interne CRM-Daten, Kampagnenergebnisse, Abrechnungsdaten
+          </div>
+          <div class="uc-highlight-box" style="margin-bottom:1rem;">
+            <strong>Ergebnis</strong>
+            Objektive KPI-Bewertung, automatisiertes Reporting, Frühwarnsystem bei Leistungsabfall
+          </div>
+          <div class="uc-highlight-box">
+            <strong>Branchen</strong>
+            Versicherungen, Banken, E-Commerce
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASE 2: Spezialsysteme -->
+  <section class="content-section" id="spezialsystem">
+    <div class="content-inner">
+      <p class="section-tag">Use Case 02</p>
+      <div class="uc-detail">
+        <div class="uc-detail-text">
+          <h3>Ablösung von Spezialsystemen</h3>
+          <p>
+            10 Fachbereiche. 10 unterschiedliche Anforderungen. 10 Speziallösungen? Wir sehen darin den <strong>falschen Ansatz</strong>.
+          </p>
+          <p>
+            Sinnvoller ist es, auf jeweils eine Plattform pro grundsätzlicher Funktion zu setzen — mit klarer Zuständigkeit und ohne Wildwuchs:
+          </p>
+          <table class="tool-table" style="margin-top:1rem;">
+            <thead>
+              <tr><th>Aufgabe</th><th>Empfohlene Plattform</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Transformation interner Daten (ETL)</td><td>KNIME</td></tr>
+              <tr><td>Arbeit mit Webdaten &amp; APIs</td><td>N8N</td></tr>
+              <tr><td>Arbeit in User-Interfaces (RPA)</td><td>UiPath</td></tr>
+              <tr><td>Orchestrierung komplexer Prozesse</td><td>Camunda</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <div class="uc-highlight-box" style="margin-bottom:1rem;">
+            <strong>Das Problem vorher</strong>
+            Jeder Bereich hat sein eigenes Tool. Kein gemeinsames Verständnis, hohe Lizenzkosten, kaum Synergien.
+          </div>
+          <div class="uc-highlight-box">
+            <strong>Das Ergebnis nachher</strong>
+            Klare Plattformstrategie, Wissenstransfer zwischen Teams, reduzierte Gesamtkosten, echte Skalierbarkeit.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASE 3: Excel & Makros -->
+  <section class="content-section" id="excel">
+    <div class="content-inner">
+      <p class="section-tag">Use Case 03</p>
+      <div class="uc-detail">
+        <div class="uc-detail-text">
+          <h3>Ablösung manueller Excel-Arbeit &amp; undurchsichtiger Makros</h3>
+          <p>
+            Excel ist ein zentrales Tool — und das wird es bleiben. Aber niemand muss manuell SVERWEISe setzen oder Daten per Hand filtern.
+          </p>
+          <p>
+            Noch kritischer: <strong>Makros sind ein erhebliches Risiko</strong>. In vielen Organisationen wurden sie vor Jahren entwickelt, sind schlecht oder gar nicht dokumentiert, und niemand weiß mehr genau, was sie tun — bis etwas schiefgeht.
+          </p>
+          <p>
+            KNIME bringt Licht ins Dunkel. Workflows können auf Anhieb von Business-Usern nachvollzogen werden — visuell, dokumentiert, testbar.
+          </p>
+        </div>
+        <div>
+          <div class="uc-highlight-box" style="margin-bottom:1rem;">
+            <strong>Typische Ausgangssituation</strong>
+            Excel-Dateien mit mehreren Tausend Zeilen, SVERWEIS-Ketten, Makros ohne Dokumentation, manuelle monatliche Aufwände von 20–40h
+          </div>
+          <div class="uc-highlight-box">
+            <strong>Nach der Automatisierung</strong>
+            Vollautomatischer Prozess, nachvollziehbarer KNIME-Workflow, Laufzeit: Minuten statt Stunden
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="content-section" style="text-align:center;">
+    <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:600;margin-bottom:1rem;">Ihr Use Case ist dabei?</h2>
+    <p style="color:var(--muted);max-width:50ch;margin:0 auto 2rem;">Sprechen Sie mit uns über Ihre konkrete Situation — wir zeigen Ihnen, was möglich ist.</p>
+    <a href="kontakt.html" class="btn btn-primary">Gespräch vereinbaren</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-tm">TM</span>
+          <span class="logo-text">Traceable Modernization</span>
+        </div>
+        <p>Efficiency meets Traceability.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="use-cases.html">Use Cases</a>
+        <a href="referenzen.html">Referenzen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 TM Traceable Modernization GmbH</span>
+      <span>Impressum · Datenschutz</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

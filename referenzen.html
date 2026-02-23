@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Referenzen – TM Traceable Modernization GmbH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .ref-card {
+      padding: 2.5rem;
+      background: var(--navy-2);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 6px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .ref-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: var(--gold);
+    }
+    .ref-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem; font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .ref-tag {
+      display: inline-block;
+      font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,168,76,0.1);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1rem;
+    }
+    .ref-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.8; }
+
+    .pub-list { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
+    .pub-item {
+      display: flex; gap: 1.5rem; align-items: flex-start;
+      padding: 1.5rem;
+      background: var(--navy-2);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 6px;
+    }
+    .pub-year {
+      font-family: var(--font-display);
+      font-size: 1.3rem; font-weight: 600;
+      color: var(--gold); flex-shrink: 0; width: 50px;
+    }
+    .pub-info h4 { font-weight: 500; margin-bottom: 0.3rem; font-size: 0.97rem; }
+    .pub-info p { color: var(--muted); font-size: 0.87rem; }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-tm">TM</span>
+      <span class="logo-text">Traceable Modernization</span>
+    </a>
+    <button class="burger" id="burger">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="use-cases.html">Use Cases</a></li>
+      <li><a href="referenzen.html" class="active">Referenzen</a></li>
+      <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-grid"></div>
+    <p class="section-tag reveal">Unsere Arbeit</p>
+    <h1 class="reveal delay-1">Referenzen &amp; <em>Publikationen</em></h1>
+    <p class="reveal delay-2">High-Value Use Cases aus der Praxis — und wo wir öffentlich aufgetreten sind.</p>
+  </section>
+
+  <!-- HIGH-VALUE USE CASES -->
+  <section class="content-section">
+    <div class="content-inner">
+      <p class="section-tag">Projektreferenzen</p>
+      <h2>High-Value Use Cases</h2>
+      <div class="uc-grid" style="margin-top:2rem;">
+
+        <div class="ref-card">
+          <span class="ref-tag">Banken</span>
+          <h3>Sollkontenausgleich</h3>
+          <p>
+            Automatisierung des Sollkontenausgleichs bei einem Bankinstitut. Vollständige Ablösung eines manuellen, fehleranfälligen Prozesses durch einen nachvollziehbaren KNIME-Workflow — inklusive Prüflogik und automatisiertem Reporting.
+          </p>
+        </div>
+
+        <div class="ref-card">
+          <span class="ref-tag">Banken · Versicherungen</span>
+          <h3>Pfändung (Seizures)</h3>
+          <p>
+            Pfändungsbearbeitung ist ein rezessionssicheres Geschäft — und ein prozessintensives. Wir haben die Bearbeitungsstrecke automatisiert: von der Eingangsverarbeitung über die Prüfung bis zur Dokumentation. Nachvollziehbar für Compliance und Fachabteilung.
+          </p>
+        </div>
+
+        <div class="ref-card">
+          <span class="ref-tag">Versicherungen</span>
+          <h3>Dienstleistersteuerung: Telefonhotline</h3>
+          <p>
+            Datengetriebene Steuerung und Bewertung einer externen Telefonhotline für eine Versicherung. Automatisierte Aufbereitung heterogener Leistungsdaten, KPI-Dashboard und prädiktives Modell zur Früherkennung von Qualitätsabfällen.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLIKATIONEN -->
+  <section class="content-section">
+    <div class="content-inner">
+      <p class="section-tag">Öffentlichkeitsarbeit</p>
+      <h2>Publikationen &amp; Auftritte</h2>
+      <p style="color:var(--muted);margin-bottom:2.5rem;">Hier werden zukünftige Fachartikel, Konferenzbeiträge und öffentliche Auftritte dokumentiert.</p>
+
+      <ul class="pub-list">
+        <li class="pub-item">
+          <span class="pub-year">—</span>
+          <div class="pub-info">
+            <h4>Ihre erste Publikation erscheint hier</h4>
+            <p>Fachartikel, Konferenzbeitrag oder Vortrag — tragen Sie Ihre Auftritte hier ein.</p>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-year">—</span>
+          <div class="pub-info">
+            <h4>Weitere Inhalte folgen</h4>
+            <p>Dieser Bereich wächst mit Ihrer Außenwirkung und Expertise.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="content-section" style="text-align:center;">
+    <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:600;margin-bottom:1rem;">Ihr Projekt als nächste Referenz?</h2>
+    <p style="color:var(--muted);max-width:50ch;margin:0 auto 2rem;">Sprechen Sie mit uns über Ihre Herausforderung — wir entwickeln gemeinsam die passende Lösung.</p>
+    <a href="kontakt.html" class="btn btn-primary">Kontakt aufnehmen</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-tm">TM</span>
+          <span class="logo-text">Traceable Modernization</span>
+        </div>
+        <p>Efficiency meets Traceability.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="use-cases.html">Use Cases</a>
+        <a href="referenzen.html">Referenzen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 TM Traceable Modernization GmbH</span>
+      <span>Impressum · Datenschutz</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
